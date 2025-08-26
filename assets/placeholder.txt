@@ -1,9 +1,13 @@
-Placeholder para manter a pasta assets.
+Imagens necessárias para a pasta assets:
 
-Imagens necessárias:
-- morango-hero.jpg (imagem principal do morango do amor para a seção hero)
-- Sugestão: imagem de alta qualidade do morango do amor com casquinha brilhante e crocante
-- Dimensões ideais: 400x400px ou 600x600px
-- Formato: JPG ou PNG com boa compressão
+1. logo.png - Logotipo do projeto
+   - Converter de: G:\Drives compartilhados\Intento - Drive Compartilhado\DRIVE GERAL - EM TRANSIÇÃO\EDIÇÃO\CLIENTES\MoranGo!\3x\Ativo 1@3x.png
+   - Dimensões recomendadas: 200x200px
+   - Formato: PNG com fundo transparente
 
-Você pode substituir este arquivo pela imagem real do produto.
+2. morango-hero.jpg - Imagem principal do produto
+   - Morango do amor com casquinha brilhante e crocante
+   - Dimensões ideais: 400x400px ou 600x600px
+   - Formato: JPG com boa compressão
+
+IMPORTANTE: Adicione essas imagens na pasta assets/ para o site funcionar completamente.
