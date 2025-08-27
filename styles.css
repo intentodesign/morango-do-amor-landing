@@ -102,14 +102,11 @@ h4 { font-size: 1.5rem; }
 }
 
 .morango-image {
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    background: var(--cinza-claro);
-    padding: 2rem;
-    border: 3px dashed var(--vermelho-claro);
 }
 
 .cta-hero {
@@ -716,15 +713,6 @@ footer p {
     }
 }
 
-/* Logo */
-.logo {
-    margin-bottom: 2rem;
-}
-
-.logo-image {
-    max-width: 200px;
-    height: auto;
-}
 
 .hero-content {
     animation: fadeInUp 1s ease-out;
