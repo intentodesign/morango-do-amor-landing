@@ -209,30 +209,53 @@ h4 { font-size: 1.5rem; }
     font-size: 1.5rem;
 }
 
-.beneficios-grid {
+.beneficios-showcase {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    max-width: 700px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-.beneficio-item {
+.beneficio-card {
+    background: var(--branco);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+}
+
+.beneficio-numero {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: var(--vermelho-claro);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background: var(--branco);
-    border-radius: 10px;
-    text-align: left;
-    border-left: 4px solid var(--vermelho-claro);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
-.beneficio-item i {
-    color: var(--verde);
-    font-size: 1.3rem;
-    min-width: 20px;
+.beneficio-conteudo h4 {
+    color: var(--vermelho-escuro);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.beneficio-conteudo p {
+    color: var(--cinza-texto);
+    margin: 0;
+    font-size: 1rem;
 }
 
 .resultado-final {
@@ -243,6 +266,197 @@ h4 { font-size: 1.5rem; }
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+/* RENDA EXTRA SECTION */
+.renda-extra {
+    background: var(--vermelho-claro);
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.renda-extra h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.renda-intro {
+    margin-bottom: 3rem;
+}
+
+.renda-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.destaque-box {
+    background: var(--vermelho-escuro);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.pergunta-destaque {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.pergunta-destaque h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.precos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preco-card {
+    background: var(--branco);
+    color: var(--vermelho-escuro);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.preco-card:hover {
+    transform: translateY(-5px);
+}
+
+.preco-card.destaque {
+    background: var(--vermelho-escuro);
+    color: white;
+    transform: scale(1.05);
+    border: 3px solid white;
+}
+
+.preco-valor {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.preco-desc {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.preco-nota {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.preco-icone {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.calculo-renda {
+    margin: 4rem 0;
+}
+
+.calculo-renda h4 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.calculo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.calculo-item {
+    background: var(--branco);
+    color: var(--vermelho-escuro);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.calculo-item.premium {
+    background: var(--vermelho-escuro);
+    color: white;
+    border: 3px solid white;
+    transform: scale(1.02);
+}
+
+.calculo-frequencia {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.calculo-resultado {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.vantagens-negocio {
+    margin: 4rem 0;
+    background: rgba(255,255,255,0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vantagem-titulo h4 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.vantagens-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.vantagem-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.vantagem-icone {
+    font-size: 1.5rem;
+}
+
+.vantagem-resumo {
+    background: var(--vermelho-escuro);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.vantagem-resumo p {
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 /* OFERTA SECTION */
